@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>saveHXPE | Outworld Records</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#5c5f61",
+                      "secondary-container": "#bee1fe",
+                      "on-secondary-fixed": "#001e2f",
+                      "surface-variant": "#d4e4fa",
+                      "on-tertiary-fixed": "#191c1e",
+                      "primary-fixed-dim": "#bac9d3",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#d4e4fa",
+                      "tertiary-container": "#eef0f2",
+                      "on-surface": "#0d1c2d",
+                      "secondary-fixed": "#c9e6ff",
+                      "background": "#f8f9ff",
+                      "secondary": "#40627b",
+                      "on-secondary-fixed-variant": "#274a62",
+                      "surface-bright": "#f8f9ff",
+                      "on-surface-variant": "#43474a",
+                      "on-background": "#0d1c2d",
+                      "inverse-on-surface": "#e9f1ff",
+                      "outline": "#73787b",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#dbe9ff",
+                      "error-container": "#ffdad6",
+                      "surface-container": "#e5efff",
+                      "tertiary-fixed": "#e0e3e5",
+                      "on-primary-fixed-variant": "#3b4951",
+                      "on-error": "#ffffff",
+                      "surface": "#f8f9ff",
+                      "primary-container": "#e3f2fd",
+                      "on-primary-fixed": "#0f1d25",
+                      "on-secondary-container": "#43647d",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#bac9d3",
+                      "error": "#ba1a1a",
+                      "surface-tint": "#526069",
+                      "outline-variant": "#c3c7cb",
+                      "inverse-surface": "#233143",
+                      "primary-fixed": "#d6e5ef",
+                      "secondary-fixed-dim": "#a8cbe7",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#606f78",
+                      "primary": "#526069",
+                      "surface-dim": "#ccdbf2",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#eef4ff",
+                      "on-tertiary-container": "#6a6d6f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "stack-md": "24px",
+                      "stack-sm": "8px",
+                      "stack-lg": "64px",
+                      "gutter": "32px",
+                      "section-gap": "120px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Syne"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Syne"],
+                      "display-xl": ["Syne"],
+                      "display-lg": ["Syne"],
+                      "headline-lg": ["Syne"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Syne"]
+              },
+              "fontSize": {
+                      "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                      "display-lg-mobile": ["40px", { "lineHeight": "1.1", "fontWeight": "800" }],
+                      "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(11, 27, 51, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .glow-shadow {
+            box-shadow: 0 8px 32px 0 rgba(46, 91, 255, 0.3);
+        }
+        .chrome-border {
+            border: 1px solid rgba(255,255,255,0.1);
+            background-image: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style data-stitch-cursor="">*{cursor:crosshair!important}[contenteditable="true"]:focus,.cursor-text:focus{cursor:text!important}</style><style data-stitch-scroll-lock="">html,body{overflow:hidden!important}</style></head>
+<body class="bg-[#050B18] text-[#dce2f5] font-body-md text-body-md antialiased overflow-x-hidden selection:bg-[#2e5bff] selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#071426]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a class="font-headline-lg text-headline-lg-mobile tracking-tighter text-white" href="#">saveHXPE</a>
+<div class="hidden md:flex gap-8 items-center font-headline-md text-headline-md font-body-md text-body-md">
+<a class="text-[#bac9d3] hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-3 py-1 rounded-full" href="#releases">RELEASES</a>
+<a class="text-[#2e5bff] font-bold relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-[#2e5bff] after:rounded-full hover:bg-white/10 transition-all duration-300 px-3 py-1 rounded-full" href="#about">ABOUT</a>
+<a class="text-[#bac9d3] hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-3 py-1 rounded-full" href="#collabs">COLLABS</a>
+<a class="text-[#bac9d3] hover:text-white transition-colors hover:bg-white/10 transition-all duration-300 px-3 py-1 rounded-full" href="#contact">CONTACT</a>
+</div>
+<button class="bg-white text-[#050B18] font-label-sm text-label-sm px-6 py-3 rounded-full hover:opacity-80 transition-opacity Active: scale-95 transition-transform shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                STREAM NOW
+            </button>
+</div>
+</nav>
+<main>
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 pb-section-gap overflow-hidden">
+<!-- Background Visuals -->
+<div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-40">
+<div class="absolute w-[800px] h-[800px] bg-[#2e5bff] rounded-full blur-[120px] mix-blend-screen opacity-20 translate-x-1/4 -translate-y-1/4"></div>
+<div class="absolute w-[600px] h-[600px] bg-[#124af0] rounded-full blur-[100px] mix-blend-screen opacity-10 -translate-x-1/3 translate-y-1/3"></div>
+</div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay z-0" data-alt="A vast, ethereal sky scape filled with soft, glowing cumulus clouds illuminated by a bright, diffused white light. The overall color palette is airy, utilizing pristine ice whites, very soft sky blues, and pale misty greys to create a weightless, stratospheric atmosphere. The image feels cinematic, expansive, and high-fidelity, perfectly suited for a light-mode, minimalist design system that embraces modern futurism and a professional, serene visual identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt1GwUxABymGyuL5Hngr8I6TB7sy14KMn8OZj1u3SGURNh2stQ7mY-FUY1c9YMYpK3twDVBVMW55RMh06Wrgvzs8YVLHoTJizuEcT6iXkVcIdf4DQP43uTqCWRHkMUKF7r6Fk2684O3cjxq5zJuUkUbZMfSsAxfZ5_qmtPm-4CwV0-5SAoS83UbKkPFUDufjBmJ6o6pyzBHpiZts2x2b_AeujRkBGRRsHUTjcoNv5xpTp8GhRRlUkdw4dcBSoUdoKcPv9lWDCyMH0"/>
+<div class="absolute inset-0 bg-[linear-gradient(rgba(3,10,24,0.65),rgba(3,10,24,0.85))] z-0"></div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col items-center text-center">
+<div class="glass-panel glow-shadow rounded-full px-4 py-1 mb-8 border border-white/20 inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#2e5bff] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-[#bac9d3] uppercase tracking-widest">HANDOUT Remix featuring Freddie Gibbs out now</span>
+</div>
+<h1 class="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-6 tracking-tighter">saveHXPE</h1>
+<p class="font-body-lg text-body-lg text-[#bac9d3] max-w-2xl mx-auto mb-12">
+                    Southern African rapper &amp; producer from Lesotho.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="bg-[#dce2f5] text-[#050B18] font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-white transition-colors shadow-[0_8px_24px_rgba(46,91,255,0.4)] flex items-center gap-2 w-full sm:w-auto justify-center">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+                        Listen Now
+                    </button>
+<button class="glass-panel chrome-border text-white font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto justify-center flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+                        Watch Rollout
+                    </button>
+<button class="bg-transparent border border-white/30 text-white font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto justify-center">
+                        Inquiries
+                    </button>
+</div>
+</div>
+</section>
+<!-- CURRENT RELEASE -->
+<section class="py-section-gap relative" id="releases">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col lg:flex-row gap-12 items-center">
+<div class="w-full lg:w-1/2">
+<div class="aspect-square rounded-2xl overflow-hidden glass-panel glow-shadow chrome-border relative group">
+<img alt="HANDOUT Remix cover art featuring Freddie Gibbs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA29twQ9Gq7rDNrgkZ3EJpGAki6zFViSMf-Dyc35UnNe9HexsSDiHAZSgFOaH2hzox47R2XopqcNLDfDAmCTLuaRvALbopni_HM4Jah0vvvIIZ_8Ac3vW0wdw71DJHrWXCcX04kEn0qWVf11r9_mSZtwTes7ybw8iiLzrxJoFySviwIMJB25kncB-diM1LjW2LeLZqRqjMb6-Jz27R_g3VMPrUpdi4pKUd_QVISw6Hcq2GElT7V-_LIqZY0rmMFP7dDzw9XCS_FXeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050B18]/90 to-transparent flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-16 h-16 bg-[#2e5bff] rounded-full flex items-center justify-center text-white shadow-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(46,91,255,0.5)]">
+<span class="material-symbols-outlined text-[32px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-6">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white">HANDOUT Remix</h2>
+<p class="font-headline-md text-headline-md text-[#bac9d3]">feat. Freddie Gibbs</p>
+<p class="font-body-lg text-body-lg text-[#bac9d3] border-l-2 border-[#2e5bff] pl-6 py-2">
+                            A raw African trap record about survival and ambition. Blending the vast sonic landscapes of Lesotho with the gritty reality of the global stage.
+                        </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<a class="glass-panel chrome-border px-6 py-3 rounded-full font-label-sm text-label-sm text-white hover:bg-white/10 transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">music_note</span> Spotify
+                            </a>
+<a class="glass-panel chrome-border px-6 py-3 rounded-full font-label-sm text-label-sm text-white hover:bg-white/10 transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">smart_display</span> YouTube
+                            </a>
+<a class="glass-panel chrome-border px-6 py-3 rounded-full font-label-sm text-label-sm text-white hover:bg-white/10 transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span> Audiomack
+                            </a>
+<a class="bg-[#2e5bff] text-white font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-[#124af0] transition-colors shadow-[0_4px_12px_rgba(46,91,255,0.3)]" href="#">
+                                Press Kit
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#071426] text-[#bac9d3] font-label-sm text-label-sm font-body-md text-body-md w-full rounded-t-xl bg-gradient-to-b from-transparent to-[#0B1B33] mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center py-stack-lg px-margin-mobile max-w-container-max mx-auto gap-stack-md">
+<div class="font-headline-md text-headline-md text-white mb-6 md:mb-0">
+                saveHXPE
+            </div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">INSTAGRAM</a>
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">SPOTIFY</a>
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">APPLE MUSIC</a>
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">YOUTUBE</a>
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">PRIVACY</a>
+<a class="text-[#bac9d3] hover:text-white hover:opacity-80 transition-opacity" href="#">TERMS</a>
+</div>
+<div class="text-[#bac9d3]/70 text-center md:text-right">
+                © 2026 OUTWORLD</div>
+</div>
+</footer>
+</body></html>
