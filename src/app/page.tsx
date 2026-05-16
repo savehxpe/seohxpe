@@ -470,8 +470,8 @@ export default function Home() {
       </section>
 
       <section className="hero-fade" id="release" data-reveal>
-        <div className="mx-auto max-w-[1180px] px-4 md:px-8">
-          <div className="mx-auto grid max-w-[1120px] gap-6 lg:grid-cols-[380px_1fr] lg:items-stretch">
+        <div className="mx-auto max-w-[1040px] px-4 md:px-8">
+          <div className="mx-auto grid max-w-[920px] gap-6 lg:items-stretch">
             <div data-gsap="release-cover" className="premium-card glass-panel chrome-border group relative mx-auto w-full max-w-[380px] overflow-hidden rounded-[1.75rem] p-3 shadow-[0_22px_70px_rgba(0,0,0,0.34)]">
               <div className="relative aspect-square overflow-hidden rounded-[1.35rem] bg-[#08152a]">
                 <Image
@@ -485,7 +485,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,11,24,0),rgba(5,11,24,0.3))]" />
               </div>
             </div>
-            <div data-gsap="release-text" className="premium-card glass-panel chrome-border flex min-h-[360px] flex-col items-center justify-center rounded-[1.75rem] p-6 text-center md:p-8 lg:p-10">
+            <div data-gsap="release-text" className="premium-card glass-panel chrome-border flex min-h-[360px] flex-col items-center justify-center rounded-[1.75rem] p-6 text-center md:p-8 lg:p-10 lg:max-w-[760px] lg:justify-center">
               <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Latest Release</p>
               <h2 className="mt-3 text-[clamp(2rem,3.4vw,3.2rem)] font-black leading-[1.05] tracking-[-0.04em] text-white">
                 HANDOUT Remix
@@ -510,7 +510,7 @@ export default function Home() {
       </section>
 
       <section id="proof" data-reveal onPointerLeave={() => setActiveProofId(null)}>
-        <div className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Proof</p>
             <h2 className="mt-3 text-[clamp(1.8rem,2.7vw,2.5rem)] font-black leading-[1.12] tracking-[-0.035em] text-white">
@@ -631,8 +631,8 @@ export default function Home() {
       </section>
 
       <section id="built" data-reveal>
-        <div className="mx-auto max-w-[1120px] px-4 text-center md:px-8">
-          <div className="glass-panel chrome-border grid items-center gap-7 rounded-[1.75rem] p-6 md:grid-cols-[1fr_0.72fr] md:p-8 lg:p-10">
+        <div className="mx-auto max-w-[980px] px-4 text-center md:px-8">
+          <div className="glass-panel chrome-border grid items-center gap-7 rounded-[1.75rem] p-6 md:p-8 lg:p-10">
             <div>
               <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Direction</p>
               <h2 className="mx-auto mt-3 max-w-3xl text-[clamp(1.65rem,2.4vw,2.35rem)] font-black leading-[1.12] tracking-[-0.035em] text-white">
@@ -648,7 +648,7 @@ export default function Home() {
       </section>
 
       <section id="partners" data-reveal>
-        <div className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Partners</p>
             <h2 className="mt-3 text-[clamp(1.75rem,2.6vw,2.45rem)] font-black leading-[1.16] tracking-[-0.03em] text-white">
@@ -658,7 +658,7 @@ export default function Home() {
               Logos on the board — from music to culture to campaigns.
             </p>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 md:grid-cols-2">
             {partners.map((partner) => (
               <div key={partner.name} className="premium-card glass-panel chrome-border flex min-h-[164px] items-center justify-center rounded-[1.5rem] p-7">
                 {missingLogos.has(partner.name) ? (
@@ -681,14 +681,14 @@ export default function Home() {
       </section>
 
       <section id="what-i-do" data-reveal className="afro-pattern-surface">
-        <div id="capabilities" className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div id="capabilities" className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">What I Do</p>
             <h2 className="mt-3 text-[clamp(1.75rem,2.6vw,2.45rem)] font-black leading-[1.16] tracking-[-0.03em] text-white">
               Culture-led work across visuals, audio, and content.
             </h2>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {capabilities.map((capability, index) => (
               <div key={capability} data-gsap="service-card" className="afro-frame premium-card glass-panel chrome-border group overflow-hidden rounded-[1.5rem]">
                 <div className="relative h-[240px] overflow-hidden bg-[#08152a] md:h-[280px]">
@@ -728,7 +728,7 @@ export default function Home() {
             <p className="mx-auto mt-4 max-w-2xl text-[16px] leading-[1.75] text-[#bac9d3]">
               Creator-led content built for culture, not ads.
             </p>
-            <div className="mx-auto mt-7 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mx-auto mt-7 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {["Sponsored videos", "Product moments", "Creator collabs", "Reels & TikToks", "Brand storytelling"].map((item) => (
                 <div key={item} data-gsap="brand-content-card" className="premium-card brand-content-card flex min-h-[76px] items-center justify-center rounded-[1rem] border border-white/10 bg-white/[0.045] px-4 py-4 text-[13px] font-bold leading-[1.35] text-[#dce2f5]">
                   {item}
@@ -744,7 +744,7 @@ export default function Home() {
         data-reveal
         className="afro-pattern-surface journey-section"
       >
-        <div id="world" className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div id="world" className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="mx-auto max-w-[1240px]">
             <div className="space-y-8">
               <div className="space-y-4 text-center">
@@ -790,14 +790,14 @@ export default function Home() {
       </section>
 
       <section id="listen" ref={listenRef} data-reveal>
-        <div className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Listen / Follow</p>
             <h2 className="mt-3 text-[clamp(1.85rem,2.7vw,2.55rem)] font-black leading-[1.12] tracking-[-0.035em] text-white">
               Music platforms and channels.
             </h2>
           </div>
-          <div className="grid gap-5 lg:grid-cols-2">
+          <div className="grid gap-5">
             <div data-gsap="listen-embed" className="premium-card glass-panel chrome-border rounded-[1.5rem] p-4 md:p-5">
               <iframe
                 title="saveHXPE Spotify playlist embed"
@@ -846,7 +846,7 @@ export default function Home() {
             <p className="mx-auto mt-3 max-w-2xl text-[16px] leading-[1.75] text-[#bac9d3]">
               Rollout moments, performances, and creative sparks from @savehxpe.
             </p>
-            <div className="mt-7 grid gap-5 md:grid-cols-2">
+            <div className="mt-7 grid gap-5">
               {instagramMoments.map((moment, index) => (
                 <div key={moment.permalink} className="premium-card instagram-moment-card glass-panel chrome-border mx-auto flex w-full max-w-[540px] justify-center overflow-hidden rounded-[1.5rem] p-3 md:p-4">
                   <div
@@ -872,7 +872,7 @@ export default function Home() {
       </section>
 
       <section id="contact" data-reveal>
-        <div className="mx-auto max-w-[1180px] px-4 md:px-8">
+        <div className="mx-auto max-w-[1040px] px-4 md:px-8">
           <div className="premium-card glass-panel chrome-border rounded-[1.75rem] p-6 text-center md:p-10">
             <p className="font-space-mono text-[12px] uppercase tracking-[0.24em] text-[#bac9d3]">Collaborations</p>
             <div className="mx-auto mt-4 flex max-w-4xl flex-col items-center justify-between gap-8">
